@@ -1,6 +1,7 @@
 # Maquina de estados finitos
  Maquina de estados implementada con un semaforo
 # Serie I y serie II
+## Serie I
 En este documento se presenta el parcial No. 2 que consiste en una maquina de estados finitos implementada con dos semaforos y ademas un detector de peatones.
 
 Los estados que se utilizan se pueden observar en la siguiente imagen:
@@ -17,15 +18,57 @@ La tabla generada con las entradas, salidas y estados actual y siguiente fue la 
 # VIVADO
 Para la programacion en SystemVerilog se utilizaron tres fuentes:
 - TOP de la maquina de estados finitos que es donde se enlaza y se llama a las condicientes del clock y los switches que se estaran utilizando.
+
 ![alt text](image-2.png)
 
 - Clock es donde se declara la variable del reloj y se declara las variables logicas de entrada y salida.
+
 ![alt text](image-3.png)
 
 - El modulo E2 es donde se crean los casos con condicionales para idicar como se comportaran los leds del semaforo, dependiendo de las condiciones de entrada.
+
 ![alt text](image-4.png)
 ![alt text](image-5.png)
 ![alt text](image-6.png)
 
 - Basys3 es donde indicamos y habilitamos los switches y leds que funcionaran el la Basys.
+
 ![alt text](image-7.png)
+
+## Serie II
+### RTL Analisys
+Verificamos y analizamos el diseño del hardware con los registros y estados que estemos utilizando. Podemos obserbar la transferencia de registros y el proceso dentro del circuito digital.
+En esta parte podemos obtener el esquematico por medio de nuestra programacion.
+
+![alt text](image-8.png)
+
+![alt text](image-9.png)
+
+![alt text](image-10.png)
+
+![alt text](image-11.png)
+
+![alt text](image-12.png)
+
+### Sintesis
+
+La sintesis se encarga de convertir el diseño que describimos con el codigo de programacion en una forma que puede ser utilizada por un chip, en este caso el FPGA (Basys3). Cuando finaliza la sintesis, el diseño se puede poner en el chip utilizando las herramientas para que pueda enrrutar de la manera correcta las conexiones dentro del chip.
+
+![alt text](image-13.png)
+![alt text](image-14.png)
+![alt text](image-15.png)
+
+### Implementacion
+
+ la implementación convierte el diseño lógico abstracto en un diseño físico específico que puede ser cargado en un FPGA para su funcionamiento real.
+
+ ![alt text](image-16.png)
+
+ ### Program and Debug
+
+ Es el proceso final en el flujo de diseño de hardware digital, donde se carga y verifica el diseño implementado en un FPGA para su funcionamiento real.
+
+ ### Discusion de resultados
+
+Una máquina de estados finitos (FSM) para controlar un semáforo podría tener estados como "verde", "amarillo" y "rojo", con transiciones entre estos estados determinadas por el tiempo y sensores simulados para el paso de vehiculos asi como el paso de peatones.
+La funcionalidad, se analiza si la FSM cumple con los requisitos operativos del semáforo, es decir que cambia a los estados deseados, tiempos de espera en cada estado y las transiciones suaves entre estados para evitar situaciones peligrosas.
