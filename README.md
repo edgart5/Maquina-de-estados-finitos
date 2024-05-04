@@ -74,3 +74,7 @@ La sintesis se encarga de convertir el diseño que describimos con el codigo de 
 
 Una máquina de estados finitos (FSM) para controlar un semáforo podría tener estados como "verde", "amarillo" y "rojo", con transiciones entre estos estados determinadas por el tiempo y sensores simulados para el paso de vehiculos asi como el paso de peatones.
 La funcionalidad, se analiza si la FSM cumple con los requisitos operativos del semáforo, es decir que cambia a los estados deseados, tiempos de espera en cada estado y las transiciones suaves entre estados para evitar situaciones peligrosas.
+
+### Video
+https://drive.google.com/file/d/1EliVfW5OCX0SdGWGq9c8r_TqgGhmLIuj/view?usp=sharing
+https://drive.google.com/file/d/1kBIkNQNR9jFUfUQjdzfoYG7ClnFwkz3H/view?usp=sharing
