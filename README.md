@@ -40,7 +40,7 @@ Para la programacion en SystemVerilog se utilizaron tres fuentes:
 Verificamos y analizamos el diseño del hardware con los registros y estados que estemos utilizando. Podemos obserbar la transferencia de registros y el proceso dentro del circuito digital.
 En esta parte podemos obtener el esquematico por medio de nuestra programacion.
 
-![alt text](image-8.png)
+![alt text](image-19.png)
 
 ![alt text](image-9.png)
 
@@ -54,6 +54,8 @@ En esta parte podemos obtener el esquematico por medio de nuestra programacion.
 
 La sintesis se encarga de convertir el diseño que describimos con el codigo de programacion en una forma que puede ser utilizada por un chip, en este caso el FPGA (Basys3). Cuando finaliza la sintesis, el diseño se puede poner en el chip utilizando las herramientas para que pueda enrrutar de la manera correcta las conexiones dentro del chip.
 
+![alt text](image-17.png)
+![alt text](image-18.png)
 ![alt text](image-13.png)
 ![alt text](image-14.png)
 ![alt text](image-15.png)
